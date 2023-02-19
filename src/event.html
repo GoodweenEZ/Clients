@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+	@@include('html/head.html',{ "title":"Event" })
+
+	<body>
+		<div class="wrapper-main">
+			@@include('html/header.html')
+			<main class="main">
+				<section class="title-event">
+					<div class="container-event">
+						<h1 class="title-event__title main-title">
+							Say no to using plastic and save Earth
+						</h1>
+						<div class="title-event__information">
+							<address class="title-event__address">
+								<svg class="title-event__svg">
+									<use xlink:href="./img/icons/icons.svg#event-icon-01"></use>
+								</svg>
+								<div class="title-event__place">
+									8 Brewery Drive, Hudson, NH 03051, USA
+								</div>
+							</address>
+							<div class="title-event__date">
+								<svg class="title-event__svg">
+									<use xlink:href="./img/icons/icons.svg#event-icon-02"></use>
+								</svg>
+								<div class="title-event__time">September 3, 2021 8:30 AM</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section class="about-event">
+					<div class="container-event">
+						<h2 class="about-event__title title-h2">About</h2>
+						<p class="about-event__text content-text">
+							Et morbi vitae lobortis nam odio. Faucibus vitae vel neque nullam
+							in in lorem platea mattis. Euismod aenean rhoncus scelerisque amet
+							tincidunt scelerisque aliquam. Luctus porttitor elit vel sapien,
+							accumsan et id ut est. Posuere molestie in turpis quam.
+							Scelerisque in viverra mi ut quisque. In sollicitudin sapien, vel
+							nulla quisque vitae. Scelerisque eget accumsan, non in. Posuere
+							magna erat bibendum amet, nisi eu id.
+						</p>
+						<p class="about-event__text content-text">
+							Viverra at diam nunc non ornare. Sed ultricies pulvinar nunc,
+							lacus sem. Tellus aliquam ut euismod cursus dui lectus. Ut amet,
+							cras volutpat dui. A bibendum viverra eu cras. Mauris morbi sed
+							dignissim a in nec aliquam fringilla et. Mattis elit dignissim
+							nibh sit. Donec arcu sed elit scelerisque tempor ornare tristique.
+							Integer faucibus duis praesent tempor feugiat ornare in. Erat
+							libero egestas porttitor nunc pellentesque mauris et pulvinar
+							eget.
+						</p>
+						<img
+							class="about-event__photo"
+							src="@img/event/event-image-01.jpg"
+							alt="ff"
+						/>
+						<p class="about-event__text content-text">
+							Et morbi vitae lobortis nam odio. Faucibus vitae vel neque nullam
+							in in lorem platea mattis. Euismod aenean rhoncus scelerisque amet
+							tincidunt scelerisque aliquam. Luctus porttitor elit vel sapien,
+							accumsan et id ut est. Posuere molestie in turpis quam.
+							Scelerisque in viverra mi ut quisque. In sollicitudin sapien, vel
+							nulla quisque vitae. Scelerisque eget accumsan, non in. Posuere
+							magna erat bibendum amet, nisi eu id.
+						</p>
+						@@include('html/other-events.html', {})
+					</div>
+				</section>
+			</main>
+			@@include('html/footer.html')
+		</div>
+		<script src="js/app.min.js"></script>
+	</body>
+</html>

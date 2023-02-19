@@ -1,0 +1,133 @@
+.events {
+	margin: 80px 0;
+	@media (max-width: 800px) {
+		margin: 35px 0;
+	}
+	&__title {
+		margin-bottom: 40px;
+		@media (max-width: 800px) {
+			margin-bottom: 20px;
+		}
+	}
+	&__body {
+		display: flex;
+		justify-content: space-between;
+		@media (max-width: 800px) {
+			flex-wrap: wrap;
+		}
+	}
+	&__item {
+		width: 50%;
+		border-radius: 8px;
+		background-color: #bef3c0;
+
+		margin: 12px;
+		@media (max-width: 800px) {
+			width: 100%;
+		}
+	}
+
+	&__content {
+		display: flex;
+		justify-content: space-between;
+		padding: 25px 40px 30px 40px;
+		@media (max-width: 1024px) {
+			padding: 15px 25px 15px 25px;
+		}
+		@media (max-width: 478px) {
+			padding: 10px 15px 10px 15px;
+		}
+	}
+	&__date {
+		text-transform: uppercase;
+		margin-right: 25px;
+		@media (max-width: 990x) {
+			margin-right: 15px;
+		}
+		@media (max-width: 478px) {
+			margin-right: 10px;
+		}
+	}
+	&__day {
+		font-size: 48px;
+		font-weight: 500;
+		color: #1d2130;
+		@media (max-width: 990px) {
+			font-size: 32px;
+		}
+		@media (max-width: 478px) {
+			font-size: 24px;
+		}
+	}
+	&__month {
+		color: #1d2130;
+		text-transform: uppercase;
+	}
+	&__information {
+	}
+	&__event {
+		color: #1d2130;
+		text-transform: uppercase;
+		letter-spacing: 2px;
+		&::after {
+			content: '';
+			display: inline-block;
+			position: relative;
+			margin-left: 20px;
+			width: 40px;
+			height: 3px;
+			top: -4px;
+			background-color: #1d2130;
+			color: #1d2130;
+			@media (max-width: 990px) {
+				margin-left: 10px;
+				width: 30px;
+			}
+		}
+	}
+	&__description {
+		max-width: 380px;
+		font-size: 28px;
+		line-height: 1.5;
+		font-weight: 700;
+		color: #1d2130;
+		@media (max-width: 990px) {
+			font-size: 22px;
+		}
+		@media (max-width: 478px) {
+			font-size: 16px;
+		}
+	}
+	&__button-arrow {
+		position: relative;
+		flex-shrink: 0;
+
+		margin-left: 24px;
+
+		width: 56px;
+		height: 56px;
+
+		background-color: #fff;
+		border-radius: 50%;
+		@media (max-width: 800px) {
+			align-self: center;
+		}
+		@media (max-width: 478px) {
+			width: 44px;
+			height: 44px;
+		}
+	}
+}
+
+.arrow {
+	&__icon {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+
+		transform: translate(-50%, -50%);
+
+		width: 17px;
+		height: 15px;
+	}
+}

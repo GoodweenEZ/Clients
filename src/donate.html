@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+	@@include('html/head.html',{ "title":"Donate" })
+	<body>
+		<div class="wrapper-main">
+			@@include('html/header.html', {})
+			<main class="main">
+				<section class="donate">
+					<div class="container">
+						<div class="donate__body">
+							<div class="donate__info">
+								<div class="donate__subtitle title-h4">Donate</div>
+								<div class="donate__inner-info">
+									<h1 class="donate__title main-title">
+										Making a donation for Nature.
+									</h1>
+									<p class="donate__text content-text">
+										When you donate, you’re supporting effective solutions to
+										big environmental challenges—an investment in the future of
+										our planet.
+									</p>
+									<button class="btn btn_back-green-primary">Donate now</button>
+								</div>
+							</div>
+							<div class="donate__image">
+								<img
+									src="@img/donate/donate-img.jpg"
+									alt="box for donate"
+									class="donate__photo"
+								/>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section class="use">
+					<div class="container">
+						<div class="use__body">
+							<div class="use__item">
+								<h2 class="use__title title-h2">How we use your donation</h2>
+							</div>
+							<div class="use__item">
+								<p class="use__content content-text">
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+									Suspendisse varius enim in eros elementum tristique. Duis
+									cursus, mi quis viverra ornare, eros dolor interdum nulla, ut
+									commodo diam libero vitae erat. Nunc ut sem vitae risus
+									tristique posuere.
+								</p>
+							</div>
+							<div class="use__item">
+								<p class="use__content content-text">
+									Aenean faucibus nibh et justo cursus id rutrum lorem
+									imperdiet. Nunc ut sem vitae risus tristique posuere. Aenean
+									faucibus nibh et justo cursus id rutrum lorem imperdiet.
+								</p>
+							</div>
+						</div>
+					</div>
+				</section>
+			</main>
+			@@include('html/footer.html', {})
+		</div>
+		<script src="js/app.min.js"></script>
+	</body>
+</html>

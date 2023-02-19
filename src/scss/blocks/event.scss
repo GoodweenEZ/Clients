@@ -1,0 +1,78 @@
+.title-event {
+	background-color: #eff7f2;
+	padding: 90px 0;
+	margin-bottom: 90px;
+	@media (max-width: 770px) {
+		padding: 45px 0;
+		margin-bottom: 45px;
+	}
+
+	&__title {
+		margin-bottom: 40px;
+	}
+	&__information {
+		display: flex;
+
+		font-size: 16px;
+		font-weight: 500;
+		color: #1d2130;
+		@media (max-width: 470px) {
+			display: block;
+		}
+	}
+	&__address {
+		display: flex;
+		margin-right: 40px;
+		@media (max-width: 470px) {
+			margin-right: 0;
+			margin-bottom: 15px;
+		}
+	}
+	&__svg {
+		position: relative;
+		top: -5px;
+
+		width: 20px;
+		height: 24px;
+		margin-right: 5px;
+	}
+	&__place {
+	}
+	&__date {
+		display: flex;
+	}
+	&__time {
+	}
+}
+
+.main-title {
+}
+
+// =========================== ABOUT EVENT =================
+.about-event {
+	&__title {
+		margin-bottom: 20px;
+	}
+	&__text {
+		margin-bottom: 15px;
+	}
+	&__photo {
+		width: 100%;
+
+		object-fit: cover;
+		object-position: center;
+
+		margin-bottom: 15px;
+
+		border-radius: 12px;
+		@media (max-width: 600px) {
+			height: 200px;
+		}
+	}
+}
+.container-event {
+}
+.title-h2 {
+}
+.content-text {
+}

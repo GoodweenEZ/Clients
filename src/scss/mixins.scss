@@ -1,0 +1,15 @@
+$maxWidth: 1500;
+$maxWidthContainer: 1280;
+$minWidth: 320;
+
+@mixin adaptiveValue($property, $startSize, $minSize) {
+	$addSize: $startSize - $minSize;
+
+	#{$property}: $startSize + px;
+	@media (max-width: #{$maxWidthContainer + px}) {
+		#{$property}: calc(
+			#{$minSize + px} + #{$addSize} *
+				((100vw - 320px) / #{$maxWidthContainer - 320})
+		);
+	}
+}

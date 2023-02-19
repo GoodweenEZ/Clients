@@ -1,0 +1,99 @@
+.donation {
+	background-color: #0b0706;
+	&__body {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		flex-wrap: wrap;
+
+		padding: 90px 0;
+		@media (max-width: 770px) {
+			justify-content: center;
+			align-items: center;
+			margin: 0 auto;
+
+			padding: 35px 0;
+		}
+	}
+	&__item {
+		width: 50%;
+
+		@media (max-width: 770px) {
+			width: 100%;
+			text-align: center;
+		}
+	}
+	&__content {
+	}
+	&__title {
+		color: #fff;
+	}
+	&__text {
+		margin-top: 10px;
+		color: #ffffff;
+		opacity: 0.6;
+	}
+	&__image {
+		text-align: right;
+		@media (max-width: 770px) {
+			text-align: center;
+		}
+	}
+	&__photo {
+		width: 100%;
+		height: 100%;
+
+		object-fit: cover;
+		object-position: center;
+	}
+}
+
+.stats {
+	margin-top: 25px;
+	@media (max-width: 770px) {
+		& {
+			margin-top: 15px;
+			text-align: center;
+		}
+	}
+	&__info {
+		display: inline-block;
+		margin-bottom: 10px;
+		@media (max-width: 480px) {
+			display: block;
+		}
+	}
+	&__rectangle {
+		position: relative;
+		top: 3px;
+
+		display: inline-block;
+		width: 16px;
+		height: 16px;
+		border-radius: 4px;
+
+		&_green {
+			background-color: #bef3c0;
+		}
+		&_perano {
+			background-color: #ac94f1;
+		}
+		&_white {
+			background-color: #fff0ca;
+		}
+		&_yellow {
+			background-color: #f9cf64;
+		}
+		&_pink {
+			background-color: #f38fbf;
+		}
+	}
+	&__text {
+		padding-left: 5px;
+		padding-right: 20px;
+		@media (max-width: 480px) {
+			padding-right: 0px;
+		}
+		color: #fff;
+	}
+}

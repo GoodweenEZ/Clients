@@ -1,0 +1,116 @@
+.program {
+	&__body {
+	}
+	&__subtitle {
+		margin-left: -90px;
+		@media (max-width: 1030px) {
+			margin-left: -30px;
+		}
+		@media (max-width: 770px) {
+			margin-left: 0;
+		}
+	}
+	&__main-content {
+	}
+	&__title {
+		margin: 25px 0;
+	}
+	&__text {
+		margin-bottom: 15px;
+		@media (max-width: 770px) {
+			text-align: justify;
+		}
+	}
+	&__image {
+		margin-top: 25px;
+		margin-bottom: 30px;
+	}
+	&__photo {
+		width: 100%;
+
+		object-fit: cover;
+		object-position: center;
+	}
+	&__title-two {
+		margin-bottom: 10px;
+	}
+	&__list {
+		margin-left: 25px;
+	}
+	&__list-item {
+		margin: 10px 0;
+
+		font-size: 16px;
+		line-height: 1.5;
+		font-weight: 700;
+		color: #1d2130;
+
+		list-style: disc;
+	}
+}
+// ========================================================= INFORMATION ===============================
+.information {
+	padding: 90px 0;
+	margin: 90px 0;
+	background-color: #ebf0f9;
+	@media (max-width: 770px) {
+		padding: 45px 0;
+		margin: 45px 0;
+	}
+	&__body {
+		display: flex;
+		flex-wrap: wrap;
+	}
+	&__item {
+		display: flex;
+		flex: 0 0 50%;
+		margin-bottom: 30px;
+		@media (max-width: 770px) {
+			flex: 0 0 100%;
+			display: block;
+			text-align: center;
+			margin-bottom: 15px;
+		}
+	}
+	&__content {
+	}
+	&__title {
+		font-size: 24px;
+		line-height: 1.5;
+		font-weight: 700;
+		color: #1d2130;
+	}
+	&__icon {
+		position: relative;
+		top: 4px;
+
+		margin-right: 20px;
+		@media (max-width: 770px) {
+			margin-right: 0;
+			top: 0;
+		}
+
+		@media (max-width: 770px) {
+			text-align: center;
+		}
+	}
+
+	&__svg {
+		width: 28px;
+		height: 28px;
+		@media (max-width: 770px) {
+			width: 35px;
+			height: 35px;
+		}
+	}
+	&__text {
+	}
+}
+.container {
+}
+.inforamation {
+}
+.features {
+}
+.content-text {
+}

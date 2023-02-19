@@ -1,0 +1,33 @@
+.btn {
+	padding: 16px 32px;
+
+	border-radius: 4px;
+
+	font-weight: 500;
+	font-size: 16px;
+}
+@media (max-width: 480px) {
+	.btn {
+		padding: 12px 20px;
+		font-size: 14px;
+	}
+}
+
+.btn_back-white {
+	background-color: #fff;
+	color: #1d2130;
+	transition: all 0.4s ease;
+	&:hover {
+		background-color: #1d2130;
+		color: #fff;
+	}
+}
+.btn_back-green-primary {
+	color: #fff;
+	background-color: #70c174;
+
+	transition: all 0.4s ease;
+	&:hover {
+		background-color: #559358;
+	}
+}

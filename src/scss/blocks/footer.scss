@@ -1,0 +1,162 @@
+.footer {
+	background-color: #0b0706;
+	padding: 90px;
+	@media (max-width: 1070px) {
+		padding: 40px;
+	}
+	@media (max-width: 480px) {
+		padding: 40px 10px;
+	}
+	&__body {
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+		@media (max-width: 480px) {
+			display: block;
+		}
+	}
+	&__logo {
+		@media (max-width: 1070px) {
+			text-align: center;
+			margin: 0 auto;
+			padding-bottom: 20px;
+		}
+		@media (max-width: 478px) {
+			position: relative;
+			top: 0;
+			left: 50%;
+			transform: translate(-50%, 0);
+
+			margin: 0 auto;
+		}
+	}
+	&__logo-icon {
+		width: 122px;
+		height: 28px;
+		fill: #fff;
+		@media (max-width: 1070px) {
+			width: 250px;
+			height: 50px;
+		}
+		@media (max-width: 478px) {
+			text-align: center;
+		}
+	}
+	&__links {
+		display: flex;
+		justify-content: space-between;
+		width: 33%;
+		@media (max-width: 1070px) {
+			width: 100%;
+			justify-content: center;
+			margin-bottom: 20px;
+		}
+		@media (max-width: 478px) {
+			display: block;
+		}
+	}
+	&__links-col {
+		display: flex;
+		flex-direction: column;
+
+		//margin-right: 90px;
+		&:last-child {
+			margin-right: 0px;
+		}
+		@media (max-width: 1070px) {
+			margin-right: 90px;
+			&:last-child {
+				margin-right: 0;
+			}
+		}
+		@media (max-width: 478px) {
+			display: block;
+			text-align: center;
+			margin-right: 0;
+			margin-bottom: 35px;
+		}
+	}
+	&__link {
+		margin-top: 20px;
+		&:first-child {
+			margin-top: 0;
+		}
+
+		font-size: 14px;
+		color: #fff;
+		opacity: 0.78;
+		line-height: 1.6;
+		transition: all 0.3s ease;
+		&:hover {
+			opacity: 1;
+			text-decoration: underline;
+		}
+		@media (max-width: 478px) {
+			display: block;
+			font-size: 24px;
+		}
+	}
+	&__form {
+		@media (max-width: 1070px) {
+			margin: 0 auto;
+		}
+	}
+	&__title {
+		max-width: 440px;
+		margin-bottom: 20px;
+
+		color: #fff;
+		font-size: 40px;
+		font-weight: 1.4;
+		font-weight: 700;
+		@media (max-width: 478px) {
+			font-size: 28px;
+			text-align: center;
+		}
+	}
+	&__input-group {
+		display: flex;
+		max-width: 450px;
+		@media (max-width: 478px) {
+			display: block;
+		}
+	}
+	&__input-email {
+		padding: 20px;
+
+		border: 1px solid #ebf0f94d;
+		color: #fff;
+		border-radius: 4px;
+		background-color: #0b0706;
+		width: 100%;
+		&:focus {
+			border: 1px solid #fff;
+		}
+		@media (max-width: 478px) {
+			margin-bottom: 20px;
+			padding: 10px;
+		}
+	}
+	&__button-submit {
+		position: relative;
+
+		padding: 19px;
+		left: -10px;
+
+		font-size: 16px;
+		font-weight: 500;
+		color: #1d2130;
+		background-color: #fff;
+		@media (max-width: 478px) {
+			left: 50%;
+			top: 0;
+			transform: translate(-50%, 0);
+			padding: 14px;
+			font-size: 16px;
+		}
+	}
+}
+.container {
+}
+.form-footer {
+}

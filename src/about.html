@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+	@@include('html/head.html',{ "title":"About us" })
+	<body>
+		<div class="wrapper-main">
+			@@include('html/header.html',{})
+			<main class="main">
+				<section class="know">
+					<div class="container">
+						<h4 class="know__subtitle title-h4">Know about us</h4>
+						<div class="know__body">
+							<h1 class="know__title main-title">
+								We are a nonprofit team working worldwide
+							</h1>
+
+							<div class="know__content">
+								<div class="know__content-title">
+									Aenean faucibus nibh et justo cursus id rutrum lorem
+									imperdiet. Nunc ut sem vitae risus tristique posuere.
+								</div>
+								<p class="know__text content-text">
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+									Suspendisse varius enim in eros elementum tristique. Duis
+									cursus, mi quis viverra ornare, eros dolor interdum nulla, ut
+									commodo diam libero vitae erat. Suspendisse varius enim
+									elementum tristique.
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="about-us-container-back">
+						<img
+							src="@img/about/about-us-back.png"
+							alt="people"
+							class="about-us-background"
+						/>
+					</div>
+					<section class="mission">
+						<div class="container-medium">
+							<div class="mission__body">
+								<div class="mission__item">
+									<p class="mission__info">our mission</p>
+									<h3 class="mission__title title-h3">
+										We make the world we save our own environment
+									</h3>
+									<p class="mission__content content-text">
+										Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+										Suspendisse varius enim in eros elementum tristique. Duis
+										cursus, mi quis viverra ornare, eros dolor interdum nulla,
+										ut commodo diam libero vitae erat. Aenean faucibus nibh et
+										justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae
+										risus tristique posuere.
+									</p>
+								</div>
+								<div class="mission__item">
+									<p class="mission__info">our Vision</p>
+									<h3 class="mission__title title-h3">
+										Plant more trees to make world air pollution free
+									</h3>
+									<p class="mission__content content-text">
+										Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+										Suspendisse varius enim in eros elementum tristique. Duis
+										cursus, mi quis viverra ornare, eros dolor interdum nulla,
+										ut commodo diam libero vitae erat. Aenean faucibus nibh et
+										justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae
+										risus tristique posuere.
+									</p>
+								</div>
+							</div>
+						</div>
+						@@include('html/supporters.html',{})
+					</section>
+				</section>
+				@@include('html/awards.html', {}) @@include('html/raised.html', {})
+				@@include('html/team.html', {}) @@include('html/greener.html', {})
+				@@include('html/news.html', {}) @@include('html/events.html', {})
+			</main>
+			@@include('html/footer.html',{})
+		</div>
+		<script src="js/app.min.js"></script>
+	</body>
+</html>

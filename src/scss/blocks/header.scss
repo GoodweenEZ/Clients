@@ -1,0 +1,203 @@
+.header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+
+	z-index: 15;
+
+	background-color: #fff;
+	&__body {
+		height: 70px;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	&__item {
+	}
+	&__logo {
+	}
+	.logo {
+		.logo__icon {
+			position: relative;
+			z-index: 15;
+			display: block;
+			width: 122px;
+			height: 28px;
+		}
+	}
+}
+.logo {
+}
+.nav {
+	&__list {
+		display: flex;
+		position: relative;
+		z-index: 15;
+	}
+	@media (max-width: 770px) {
+		&__list {
+			display: none;
+		}
+	}
+	&__item {
+		margin-right: 40px;
+	}
+	&__item:last-child {
+		margin-right: 0;
+	}
+	&__link {
+		transition: color 0.2s linear;
+
+		font-family: 'Roboto';
+		font-weight: 500;
+		font-size: 16px;
+		color: #525560;
+	}
+
+	&__link:hover {
+		color: #0b0706;
+	}
+	.nav-button {
+		color: #fff;
+		padding: 10px 30px;
+		border-radius: 4px;
+
+		background-color: #1d2130;
+
+		transition: background-color 0.2s ease-in;
+	}
+
+	.nav-button:hover {
+		background-color: #525560;
+	}
+}
+
+.donate {
+	&__btn {
+		color: #fff;
+		padding: 10px 30px;
+		border-radius: 4px;
+
+		background-color: #1d2130;
+
+		transition: background-color 0.2s ease-in;
+	}
+	&__btn:hover {
+		background-color: #525560;
+	}
+}
+.header {
+	&__menu {
+	}
+}
+.menu {
+	&__body {
+		position: fixed;
+		top: 0;
+
+		left: -100%;
+		width: 100%;
+		height: 100%;
+		padding: 100px 30px 30px 30px;
+
+		background-color: rgba(0, 0, 0, 0.9);
+
+		transition: left 0.3s ease 0s;
+		overflow: auto;
+	}
+
+	.menu__body._acitve {
+		left: 0;
+	}
+
+	&__body::before {
+		content: '';
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 70px;
+		background-color: #fff;
+	}
+
+	&__list > li {
+		margin-bottom: 30px;
+	}
+	&__list > li:last-child {
+		margin-bottom: 0;
+	}
+	&__item {
+	}
+	&__link {
+		font-size: 24px;
+		color: #fff;
+		font-weight: 500;
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+	@media (max-width: 480px) {
+	}
+}
+
+// ================== BURGER
+
+.header {
+	&__burger {
+	}
+}
+.burger {
+	&__icon {
+		display: none;
+	}
+
+	@media (max-width: 770px) {
+		&__icon {
+			z-index: 5;
+			display: block;
+			position: relative;
+			width: 40px;
+			height: 20px;
+			cursor: pointer;
+		}
+
+		&__icon span,
+		&__icon::before,
+		&__icon::after {
+			position: absolute;
+			left: 0;
+			height: 10%;
+			width: 100%;
+			transition: all 0.3s ease 0s;
+			background-color: #0b0706;
+		}
+
+		&__icon::before,
+		&__icon::after {
+			content: '';
+		}
+		&__icon::before {
+			top: 0;
+		}
+		&__icon::after {
+			bottom: 0;
+		}
+		&__icon span {
+			top: 50%;
+			transform: scale(1) translate(0px, -50%);
+		}
+		&__icon._acitve span {
+			transform: scale(0) translate(0px, -50%);
+		}
+		&__icon._acitve::before {
+			top: 50%;
+			transform: rotate(-45deg) translate(0px, -50%);
+		}
+		&__icon._acitve::after {
+			bottom: 50%;
+			transform: rotate(45deg) translate(0px, 50%);
+		}
+	}
+}
